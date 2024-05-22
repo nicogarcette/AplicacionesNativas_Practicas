@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/pregunta"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_respuestas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPregunta">
+
+        <RadioButton
+            android:id="@+id/rb_excellente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/respuesta1" />
+
+        <RadioButton
+            android:id="@+id/rb_bueno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/respuesta2" />
+
+        <RadioButton
+            android:id="@+id/rb_malo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/respuesta3" />
+
+        <RadioButton
+            android:id="@+id/rb_pesimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/respuesta4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_respuestas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
